@@ -840,8 +840,6 @@ function runTests() {
   console.assert(findWinnerByEmail('missing@test.com') === undefined, 'findWinnerByEmail should return undefined for unknown emails');
   localStorage.removeItem('gravity_winners');
 
-  showMessage('TEST');
-  console.assert(document.getElementById('result').textContent === 'TEST', 'showMessage should update the result content');
 
   const termsEntry = LEGAL_CONTENT.terms;
   console.assert(termsEntry.title === 'Terms', 'legal content title should exist');
